@@ -17,6 +17,7 @@ const Slice = createSlice({
     initialState,
     reducers: {
         addEmployee: (state, action) => {
+            console.log("the action data is", action)
             const data = {
                 id: nanoid(),
                 name: action.payload
